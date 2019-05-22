@@ -1,0 +1,20 @@
+// Test d'intégration 
+// Tests e2e
+// Test IHM
+// Lancer l'application
+// Naviguer sur l'app et realiser des actions
+// Navigateur headless
+// Selenium driver
+// Framework Angular: Protractor
+describe(' group ', () => {
+
+    test('scenario', () => {
+        window.location('/home')
+        browser.to('/home');
+        document.querySelector('#submit');
+        query('#submit').click();
+        wait(2s);
+        expect(browser.getLocation()).toBe('/success');
+    })
+
+})
